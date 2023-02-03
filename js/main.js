@@ -2,7 +2,7 @@ const contenedorProductos = document.getElementById('contenedor-productos');
 const abrirCarrito = document.getElementById("abrirCarrito");
 const micarritoContenedor = document.getElementById("micarrito-contenedor")
 
-let carrito = [];
+let carrito =JSON.parse(localStorage.getItem('carrito')) || [];
     
     productos.forEach((producto) => {
         let cardProducto = document.createElement ("div");
@@ -77,48 +77,3 @@ abrirCarrito.addEventListener("click", () => {
 
 
 
-
-     
- /*
-    const contenedorProductos = document.getElementById('contenedor-productos');
-    const carritoTexto = document.getElementById('carrito');
-
-    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-const nuevaCantidadCarrito = carrito.reduce((acc, { cantidad }) => acc + cantidad, 0);
-carritoTexto.innerHTML = `Carrito(${nuevaCantidadCarrito})`;
-
-const agregarCardDeProducto = producto => {
-const cardProducto = document.createElement('div');
-cardProducto.className = 'col';
-cardProducto.innerHTML = `
-<div id="producto-${producto.id}" class="card">
-<img src="${producto.imagen}" class="card-img-top">
-<div class="card-body">
-<h5>${producto.nombre}</h5>
-<p>${producto.descripcion}</p>
-<p>Categoria: ${producto.categoria}</p>
-<p>$ ${producto.precio}</p>
-<button class="btn btn-primary">Agregar al carrito</button>
-</div>
-</div>
-`;
-
-contenedorProductos.append(cardProducto);
-
-document.querySelector(`#producto-${producto.id} button`).addEventListener('click',() => {
-const productoEnElCarrito = carrito.find((productoCarrito) => productoCarrito.id === producto.id);
-const cantidad = (productoEnElCarrito?.cantidad || 0) + 1
-
-if (productoEnElCarrito) {
-productoEnElCarrito.cantidad = cantidad;
-} else {
-carrito.push({...producto,cantidad});
-}
-
-localStorage.setItem('carrito', JSON.stringify(carrito));
-const nuevaCantidadCarrito = carrito.reduce((acc, { cantidad }) => acc + cantidad, 0);
-carritoTexto.innerHTML = `Carrito(${nuevaCantidadCarrito})`;
-}
-);
-} 
-*/
