@@ -27,7 +27,7 @@ let carrito =JSON.parse(localStorage.getItem('carrito')) || [];
                 nombre: producto.nombre,
                 precio: producto.precio,
             });
-            console.log(carrito);
+            localStorage.setItem("carrito", JSON.stringify(carrito));
         });
     });
 
