@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+.navContainer {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: rgb(81, 8, 8);
+}
+.navBarLogo {
+    justify-self: start;
+    margin-left: 20px;
+    color: white;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+.abrir-carrito {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: url(../img/Rectangle3.png);
+}
+.bannerContainer {
+    text-align: center;
+    padding: 15% 0;
+}
+.banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow:1px 1px 3px rgba(0, 0,0, 0.2);
+}
+.banner h2 {
+    margin: 0;
+    color: white;
+    text-shadow:1px 1px 3px rgba(0, 0,0, 0.2);
+}
+.banner p {
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow:1px 1px 3px rgba(0, 0,0, 0.2);
+}
+
+.contenedorProductos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0,0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.card img {
+    width: 90%;
+    height: 250px;
+}
+.precio {
+    color: grey;
+    font-size: 22px;
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.card button:hover {
+    opacity: 0.7;
+}
+
+.micarritoContenedor{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: rgb(39, 37, 37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.micarritoContenedor::-webkit-scrollbar{
+    display: none;
+}
+.micarrito-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.micarrito-header-title{
+    justify-self: start;
+}
+.micarrito-header-button{
+    cursor: pointer;
+}
+.micarritoContenedor .micarrito-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.micarritoContenedor div img {
+    height: 120px;
+    width: 120px;
+}
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}

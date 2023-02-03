@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    </script> 
 </head>
 <body>
-    <h1>
-        Aria Sports
-    </h1>
-    <h2>
-        Mi carrito de compras
-    </h2>
-
-<script src="./js-entrega-1/js/main.js"></script>
+    <div class="navContainer">
+        <nav class="navBar">
+            <h1 class="navBarLogo">Shop</h1>
+            <h1 class="abrir-carrito" id="abrirCarrito">🛒</h1>
+        </nav>
+    </div>
+    <div class="banner">
+        <div class="bannerContainer">
+            <h2>Balance Sports</h2>
+            <p>La mejor tienda para ropa deportiva</p>
+        </div>
+    </div>
+    
+    <div id="contenedor-productos" class="contenedorProductos"></div>
+    
+    <div id="micarrito-contenedor" class="micarritoContenedor"></div>
+    <script src="./js/products.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
