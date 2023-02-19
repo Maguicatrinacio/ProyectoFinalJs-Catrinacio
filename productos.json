@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Remera Aeroready",
+        "precio": 1500,
+        "img": "././img/remera-m-negra.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Remera Mission",
+        "precio": 600,
+        "img": "././img/remera-m-lila.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Remera Future",
+        "precio": 650,
+        "img": "././img/remera-m-blanca.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Remera Classics",
+        "precio": 1200,
+        "img": "././img/remera-m-rosa.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Remera Victory",
+        "precio": 1000,
+        "img": "././img/remera-h-negra.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Remera Training",
+        "precio": 450,
+        "img": "././img/remera-h-blanca.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Remera Run",
+        "precio": 800,
+        "img": "././img/remera-h-azul.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Remera Space",
+        "precio": 1500,
+        "img": "././img/remera-h-roja.jpg",
+        "cantidad": 1
+    }
+]

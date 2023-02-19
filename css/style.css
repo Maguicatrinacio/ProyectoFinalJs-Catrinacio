@@ -63,11 +63,12 @@ body {
 .card {
     box-shadow: 0 4px 8px rgba(0, 0,0, 0.2);
     max-width: 300px;
-    margin: auto;
+    margin: 20px;
     text-align: center;
     font-family: arial;
 }
 .card img {
+    margin: 14px;
     width: 90%;
     height: 250px;
 }
@@ -80,7 +81,7 @@ body {
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: black;
+    background-color: rgb(97, 41, 41);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -139,4 +140,39 @@ body {
     padding: 20px;
     text-align: center;
     padding-top: 20px;
+}
+
+.eliminar-producto {
+    cursor: pointer;
+}
+
+.cantidad-carrito {
+    background-color: white;
+    color: rgb(97, 7, 7);
+    border-radius: 70%;
+    font-size: 14px;
+    padding: 4px;
+    top: 37px;
+    right: 10px;
+    position: absolute;
+    display: none;
+}
+
+.restar {
+    cursor: pointer;
+}
+.sumar {
+    cursor: pointer;
+}
+.botonPagar{
+    cursor: pointer;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+
+.vaciar-carrito{
+    cursor: pointer;
+    margin-left: 90%;
 }

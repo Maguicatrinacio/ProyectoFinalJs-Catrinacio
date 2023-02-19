@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <link rel="stylesheet" href="./css/style.css">
-    </script> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
     <div class="navContainer">
         <nav class="navBar">
-            <h1 class="navBarLogo">Shop</h1>
-            <h1 class="abrir-carrito" id="abrirCarrito">🛒</h1>
+            <h1 class="navBarLogo">Balance Sports</h1>
+            <h1 class="abrir-carrito" id="abrirCarrito">🛒 <span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
         </nav>
     </div>
     <div class="banner">
         <div class="bannerContainer">
-            <h2>Balance Sports</h2>
-            <p>La mejor tienda para ropa deportiva</p>
+            <h2>Impossible is nothing</h2>
+            <p>Equipment for your body </p>
         </div>
     </div>
     
     <div id="contenedor-productos" class="contenedorProductos"></div>
     
     <div id="micarrito-contenedor" class="micarritoContenedor"></div>
-    <script src="./js/products.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
