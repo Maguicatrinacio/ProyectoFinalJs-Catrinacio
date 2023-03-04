@@ -51,7 +51,7 @@ const getProductos = async () => {
                     background: "rgb(49, 45, 45)",
                     color: "white"
                 }
-              }).showToast();
+            }).showToast();
 
             carritoNumero();
             saveLocal();  

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nombre": "Remera Aeroready",
+        "nombre": "Remera Summer",
         "precio": 1500,
         "img": "././img/remera-m-negra.jpg",
         "cantidad": 1
@@ -9,14 +9,14 @@
     {
         "id": 2,
         "nombre": "Remera Mission",
-        "precio": 600,
+        "precio": 1600,
         "img": "././img/remera-m-lila.jpg",
         "cantidad": 1
     },
     {
         "id": 3,
         "nombre": "Remera Future",
-        "precio": 650,
+        "precio": 1650,
         "img": "././img/remera-m-blanca.jpg",
         "cantidad": 1
     },
@@ -37,14 +37,14 @@
     {
         "id": 6,
         "nombre": "Remera Training",
-        "precio": 450,
+        "precio": 1450,
         "img": "././img/remera-h-blanca.jpg",
         "cantidad": 1
     },
     {
         "id": 7,
         "nombre": "Remera Run",
-        "precio": 800,
+        "precio": 1800,
         "img": "././img/remera-h-azul.jpg",
         "cantidad": 1
     },

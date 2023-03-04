@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: rgb(227, 220, 220);
 }
 .navContainer {
     position: sticky;
@@ -10,7 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     height: 12vh;
-    background-color: rgb(81, 8, 8);
+    background-color: rgb(184, 144, 144);
 }
 .navBarLogo {
     justify-self: start;
@@ -22,7 +23,7 @@ body {
 .abrir-carrito {
     font-size: 25px;
     margin-right: 20px;
-    margin-top: 3.5vh;
+    margin-top: 3.9vh;
     cursor: pointer;
 }
 .banner {
@@ -42,12 +43,15 @@ body {
 }
 .banner h2 {
     margin: 0;
-    color: white;
+    margin-left: 50%;
+    font-size: 30px;
+    color: rgb(128, 96, 96);
     text-shadow:1px 1px 3px rgba(0, 0,0, 0.2);
 }
 .banner p {
-    font-size: 30px;
-    color: white;
+    font-size: 25px;
+    margin-left: 50%;
+    color: rgb(77, 50, 50);
     opacity: 0.7;
     text-shadow:1px 1px 3px rgba(0, 0,0, 0.2);
 }
@@ -64,8 +68,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0,0, 0.2);
     max-width: 300px;
     margin: 20px;
+    background-color: white;
     text-align: center;
-    font-family: arial;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
 }
 .card img {
     margin: 14px;
@@ -75,13 +81,15 @@ body {
 .precio {
     color: grey;
     font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .card button {
     border: none;
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: rgb(97, 41, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  rgb(168, 116, 116);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -92,11 +100,11 @@ body {
 }
 
 .micarritoContenedor{
-    width: 80%;
-    margin: 0 10%;
+    width: 63%;
+    margin: 0 20%;
     max-height: 88vh;
-    color: white;
-    background-color: rgb(39, 37, 37);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,38 +120,64 @@ body {
 .micarrito-header{
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: rgb(200, 215, 216);
     color: white;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;
 }
 .micarrito-header-title{
     justify-self: start;
+    margin-right: 62%;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 22px;
+    margin-top: 20px;
 }
 .micarrito-header-button{
     cursor: pointer;
+    margin-right: 8px;
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
 }
 .micarritoContenedor .micarrito-content{
     display: flex;
+    color: rgb(184, 144, 144);
+    font-size: 16px;
+    font-weight:bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     flex-direction: row;
     justify-content: space-around;
+    gap: 45px;
     align-items: center;
+    text-align:center ;
     width: 70%;
     margin: 10px;
 }
 
 .micarritoContenedor div img {
-    height: 120px;
-    width: 120px;
+    margin-top: 10px;
+    height: 160px;
+    width: 160px;
 }
 .total-content {
-    font-size: 25px;
+    font-size: 10px;
     padding: 20px;
+    border-radius: 10px;
+    margin-top: 8px;
     text-align: center;
     padding-top: 20px;
+    background-color: rgb(200, 215, 216);
+    cursor: pointer;
+    margin-left: 70%;
 }
 
 .eliminar-producto {
     cursor: pointer;
+    display: flex;
+    font-size: 25px;
+    font-weight: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(166, 163, 163);
 }
 
 .cantidad-carrito {
@@ -160,19 +194,31 @@ body {
 
 .restar {
     cursor: pointer;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .sumar {
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 .botonPagar{
     cursor: pointer;
-    font-size: 26px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(200, 215, 216);
+    border: rgb(200, 215, 216);
     color: white;
+    font-weight:bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
+.botonPagar:hover {
+    color: rgb(184, 144, 144);
+}
 .vaciar-carrito{
     cursor: pointer;
     margin-left: 90%;
+}
+.vaciar-carrito:hover{
+    transform: scale(1.2, 1.2);
 }

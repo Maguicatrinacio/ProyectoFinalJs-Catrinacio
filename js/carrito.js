@@ -4,7 +4,7 @@ const reconstruirCarrito = () => {
     const miCarritoHeader = document.createElement("div");
     miCarritoHeader.className = "micarrito-header"
     miCarritoHeader.innerHTML =`
-        <h1 class="micarrito-header-title"> Carrito </h1>
+        <h1 class="micarrito-header-title"> Carrito de compras</h1>
     `;
     micarritoContenedor.append(miCarritoHeader);
 
@@ -29,7 +29,7 @@ const reconstruirCarrito = () => {
             <p> Cantidad: ${producto.cantidad}</p>
             <span class="restar"> - </span>
             <p> Total Producto: $${producto.cantidad * producto.precio}</p>
-            <span class="eliminar-producto"> ❌ </span>
+            <span class="eliminar-producto"> x </span>
         `;
         micarritoContenedor.append(carritoContent);
 
